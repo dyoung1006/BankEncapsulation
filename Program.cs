@@ -11,18 +11,7 @@ namespace BankEncapsulation
     //Once finished save, commit, and push back to Github
     #endregion
     class Program
-    {
-        public class BankAccount
-        {
-            private double Balance { get; set; } = 0;
-            public void Deposit(double amount) => Balance += amount;
-
-            public BankAccount()
-            {
-            }
-            public void GetBalance() => Console.WriteLine($"Your balance is: {Balance:c2}");
-        }
-    
+    {         
         static void Main(string[] args)
         {
             var myAccount = new BankAccount();
